@@ -1,0 +1,35 @@
+body {
+  color: #636163;
+
+}
+
+canvas {
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  z-index: -10;
+}
+
+.right {
+  float: right;
+  clear: right;
+}
+
+h1 {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+.footer-social li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.center {
+  text-align: center;
+}
