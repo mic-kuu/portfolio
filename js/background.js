@@ -1,3 +1,4 @@
+/* This file configures the background effect powered by the particle.js lib */
 particlesJS("particles-js", {
 "particles": {
 "number": {

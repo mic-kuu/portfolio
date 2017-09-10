@@ -1,35 +1,118 @@
 body {
-  color: #636163;
-
+    color: #636163;
+    font-size: 2rem;
 }
 
 canvas {
-  height: 100vh;
-  position: fixed;
-  top: 0px;
-  z-index: -10;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: -10;
 }
 
-.right {
-  float: right;
-  clear: right;
+header {
+    margin: 5rem 1rem 3rem;
+    justify-content: flex-end;
+}
+
+footer {
+    margin: 7rem 1rem 3rem;
 }
 
 h1 {
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  font-size: 3em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 3em;
+    font-weight: 500;
 }
 
 h3 {
-  font-size: 1.75em;
+    font-size: 1.75em;
+}
+
+h4 {
+    font-size: 1.5em;
+    font-weight: 500;
 }
 
 .footer-social li {
-  display: inline-block;
-  margin: 10px;
+    display: inline-block;
+    margin: 10px;
+}
+
+/* -- Helper styles  -- */
+
+.fit-to-size {
+    flex: 0 0 auto;
+}
+
+.right {
+    float: right;
+    clear: right;
 }
 
 .center {
-  text-align: center;
+    text-align: center;
+}
+
+/* -- Helper styles  -- */
+
+/* Overwrittng the default link behaviour */
+a {
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 1s ease;
+}
+
+a:link,
+a:visited {
+    color: #636163;
+}
+
+a:hover,
+a:active {
+    color: #ed7579;
+}
+
+/* Icons in the work section have to be centered and behave in the flex way */
+.technologies-icons {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.technologies-icons img {
+    margin: 2rem;
+}
+
+/* Visual break between next sections/articles (eg. work section, about section...)  */
+.section {
+    margin: 2rem 1rem 3rem;
+}
+
+/* Sets up the gray box for the work-card */
+.work-card {
+    color: #e6e4dc;
+    margin: 2rem;
+    display: block;
+    padding: 1rem;
+    border-width: medium;
+    border-color: #636163;
+    border-style: solid;
+    background-color: #636163;
+}
+
+/* Required for a proper behaviour of elements in the work card */
+.work-card-flexbox {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1rem 1rem 2rem;
+    position: relative;
+    height: 100%;
+}
+
+/* Makes the image in the work-card always align to the bottom */
+.bottom-wrapper {
+    margin-top: auto;
 }
